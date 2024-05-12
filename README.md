@@ -1,9 +1,11 @@
-# Vue 3 + TypeScript + Vite
+# Vue3-Components
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Paquete de componentes Vue3 con soporte Typescript 5.X
 
-## Recommended Setup
+Componentes disponibles:
+- VInput
+- VLabel
+- VButtonPrimary
+- VButtonCancel
+- VButtonDanger
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
-
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
