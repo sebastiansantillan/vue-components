@@ -1,10 +1,11 @@
 {
-  "name": "@sebastiansantillan/vue3-components",
+  "name": "@sebastian.santillan/vue3-components",
   "version": "0.1.0-alpha",
   "description": "Paquete de componentes Vue3 con soporte Typescript 5.X",  
   "private": false,
-  "repository": {
-    "url": "https://github.com/sebastiansantillan/vue3-components"
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "type": "module",
   "scripts": {
@@ -23,5 +24,11 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.6"
-  }
+  },
+  "license": "MIT",
+  "keywords": [
+    "Vue",
+    "Javascript",
+    "Tailwind"
+  ]
 }
