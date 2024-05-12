@@ -1,8 +1,11 @@
 {
   "name": "@sebastiansantillan/vue3-components",
-  "private": false,
   "version": "0.1.0-alpha",
-  "description": "Paquete de componentes Vue3 con soporte Typescript 5.X",
+  "description": "Paquete de componentes Vue3 con soporte Typescript 5.X",  
+  "private": false,
+  "repository": {
+    "url": "https://github.com/sebastiansantillan/vue3-components"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
