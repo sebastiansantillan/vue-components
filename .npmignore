@@ -1,0 +1,8 @@
+# Incluir solo package.json y los archivos Vue en dist
+package.json
+/dist/**/*.*
+
+# Excluir todos los demás archivos y directorios
+*
+!package.json
+!/dist/**/*.*

@@ -1,16 +1,24 @@
 {
   "name": "@sebastian.santillan/vue3-components",
-  "version": "0.1.0-alpha",
-  "description": "Paquete de componentes Vue3 con soporte Typescript 5.X",  
+  "version": "0.1.11-alpha",
+  "description": "Paquete de componentes Vue3 con soporte Typescript 5.X",
   "private": false,
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "dev": "vite",    
+    "build": "vue-tsc && npm run copy-components",
+    "copy-components": "npm run copy:windows || npm run copy:unix",
+    "copy:windows": "xcopy /s /e src\\components dist",
+    "copy:unix": "cp -r src/components dist/",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -29,6 +37,12 @@
   "keywords": [
     "Vue",
     "Javascript",
-    "Tailwind"
-  ]
+    "Tailwind",
+    "components"
+  ],
+  "author": {
+    "name": "Sebastián Santillán",
+    "email": "sebastian.santillan@gmail.com",
+    "url": "https://twitter.com/sebavelvet"
+  }
 }
